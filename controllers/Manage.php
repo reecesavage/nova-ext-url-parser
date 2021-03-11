@@ -108,9 +108,12 @@ class __extensions__nova_ext_url_parser__Manage extends Nova_controller_admin
 
       if (isset($_POST['submit']) && $_POST['submit'] == 'Submit')
         {
-            
+             
+
             $dataArray['title']=$_POST['title'];
             $dataArray['url']=$_POST['url'];
+              $dataArray['post_url']=$_POST['post_url'];
+               $dataArray['is_new_tab']=isset($_POST['is_new_tab'])?$_POST['is_new_tab']:0;
             $insert = $this->db->insert('tag', $dataArray);
         
             $this->dbutil->optimize_table('tag');
@@ -161,6 +164,8 @@ class __extensions__nova_ext_url_parser__Manage extends Nova_controller_admin
             
                 $dataArray['title']=$_POST['title'];
                 $dataArray['url']=$_POST['url'];
+                $dataArray['post_url']=$_POST['post_url'];
+               $dataArray['is_new_tab']=isset($_POST['is_new_tab'])?$_POST['is_new_tab']:0;
 
 
                 $this->db->where('id', $id);

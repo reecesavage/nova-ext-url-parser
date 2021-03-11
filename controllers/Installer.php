@@ -47,6 +47,8 @@ function __construct() {
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `title` varchar(255) DEFAULT NULL,
   `url` text DEFAULT NULL,
+   `post_url` varchar(255) DEFAULT NULL,
+  `is_new_tab` int(11) DEFAULT 0,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci");
      }
@@ -55,11 +57,11 @@ function __construct() {
       // Add item
   
      
-      $query = $this->ci->db->get_where('menu_items', array('menu_name' => 'Nova Url Parser'));
+      $query = $this->ci->db->get_where('menu_items', array('menu_name' => 'Url Parser'));
     $item = ($query->num_rows() > 0) ? $query->row() : false;   
       if($item==false){
       $insertItem = $this->ci->menu_model->add_menu_item( [
-        'menu_name' => 'Nova Url Parser',
+        'menu_name' => 'Url Parser',
         'menu_group' => 0,
         'menu_order' => 0,
         'menu_sim_type' => 1,

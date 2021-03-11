@@ -52,10 +52,23 @@ $this->event->listen(['location', 'view', 'data', 'admin', 'write_missionpost'],
                   
                 $query = $this->db->get_where('tag', array('title' => $search));
                 $model = ($query->num_rows() > 0) ? $query->row() : false;
-                if(!empty($model))
+                 if(!empty($model))
                 {
-                  $url= $model->url.$title;
-                  $finalArray["[$value]"]="<a href=$url>$display</a>";
+                  if(empty($model->post_url))
+                  {
+                     $url= $model->url.$title;
+                  }else {
+                    
+                       $url= $model->url.$title."/".$model->post_url;
+                  }
+
+                  if(empty($model->is_new_tab))
+                  {
+                    $finalArray["[$value]"]="<a href=$url>$display</a>";
+                  }else {
+                     $finalArray["[$value]"]="<a target='_blank' href=$url>$display</a>";
+                  }
+                  
                 }
 
                

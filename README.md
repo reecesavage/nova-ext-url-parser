@@ -10,6 +10,8 @@ CREATE TABLE `nova_tag` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `title` varchar(255) DEFAULT NULL,
   `url` text DEFAULT NULL,
+  `post_url` varchar(255) DEFAULT NULL,
+  `is_new_tab` int(11) DEFAULT 0,
   PRIMARY KEY (`id`)
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_unicode_ci;
 
