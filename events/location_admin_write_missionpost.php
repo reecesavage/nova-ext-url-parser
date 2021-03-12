@@ -4,11 +4,21 @@
 $this->event->listen(['location', 'view', 'data', 'admin', 'write_missionpost'], function($event){
 
 
-
   $id = (is_numeric($this->uri->segment(3))) ? $this->uri->segment(3) : false;
   $post = $id ? $this->posts->get_post($id) : null;
   
+  
 
+   $manager =  new \nova_ext_url_parser\Installer();
+   
+     
+    if(isset($event['data']['mission_notes']))
+     {
+        foreach($event['data']['mission_notes'] as $key =>$value)
+        {
+          $event['data']['mission_notes'][$key]['notes'] = $manager->urlparser($value['notes']);
+        }
+     }
   
   switch($this->uri->segment(4)){
    
