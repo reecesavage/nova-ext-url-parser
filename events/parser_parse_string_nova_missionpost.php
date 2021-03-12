@@ -73,12 +73,12 @@ $this->event->listen(['parser', 'parse_string', 'output', 'write', 'missionpost'
       {
         foreach ($finalArray as $key => $value) {
 
-           $content= str_replace($key,$value,$post);
-           $post=$content;
+           $event['output']= str_replace($key,$value,$event['output']);
+          // $post=$content;
         }
- 
-          $event['output'] = str_replace($postContent,$content,$event['output']); 
+          
       }
 
   }
+
 });
