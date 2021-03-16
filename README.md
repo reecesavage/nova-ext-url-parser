@@ -1,4 +1,4 @@
-# nova-ext-url-parser
+# URL Parser - A [Nova](https://anodyne-productions.com/nova) Extension
 Allows Nova to Parse tags that are translated into web links on the front end.
 ## Created for you by [Sim Central](https://simcentral.org)
 
