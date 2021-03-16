@@ -2,7 +2,7 @@
 
 
 <p>
-<?php echo anchor('extensions/nova_ext_url_parser/Manage/index','« Back to Url Parser', array('class' => 'image'));?>
+<?php echo anchor('extensions/nova_ext_url_parser/Manage/index','« Back to URL Parser', array('class' => 'image'));?>
 </p>
 
 <?php echo form_open('extensions/nova_ext_url_parser/Manage/create/');?>
