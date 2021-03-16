@@ -40,7 +40,7 @@ Installation is now complete!
   - `[wiki|Ulysses]` = `<a href="https://wiki.starship-ulysses.com/index.php?title=Ulysses">Ulysses</a>`
   - `[wiki|United_Federation_of_Planets]` = `<a href="https://wiki.starship-ulysses.com/index.php?title=United_Federation_of_Planets">United_Federation_of_Planets</a>`
   - `[wiki|United_Federation_of_Planets|United Federation of Planets]` = `<a href="https://wiki.starship-ulysses.com/index.php?title=United_Federation_of_Planets">United Federation of Planets</a>`
-- If your website moves, but the Unique Values stay the same all you need to do is update the URL in the tag to fix broken links.
+- If your website moves but the Unique Values stay the same all you need to do is update the URL in the tag to fix broken links.
 
 ## Issues
 
