@@ -36,7 +36,7 @@ $this->event->listen(['location', 'view', 'data', 'admin', 'write_missionpost'],
        $text=substr($content, strpos($content, "[") + 1); 
       if(!empty($text))
      {
-        $finalText=explode(']', $text);
+       $finalText=explode(']', $text,2);
         if(isset($finalText[0]))
         {     
              $contentArray[]=$finalText[0]; 

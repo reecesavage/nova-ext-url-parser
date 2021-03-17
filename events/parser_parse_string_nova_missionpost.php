@@ -19,7 +19,7 @@ $this->event->listen(['parser', 'parse_string', 'output', 'write', 'missionpost'
        $text=substr($content, strpos($content, "[") + 1); 
       if(!empty($text))
      {
-        $finalText=explode(']', $text);
+       $finalText=explode(']', $text,2);
         if(isset($finalText[0]))
         {     
              $contentArray[]=$finalText[0]; 
@@ -67,6 +67,9 @@ $this->event->listen(['parser', 'parse_string', 'output', 'write', 'missionpost'
                
             }
       }
+
+
+     
      
 
       if(!empty($finalArray))
@@ -80,5 +83,7 @@ $this->event->listen(['parser', 'parse_string', 'output', 'write', 'missionpost'
       }
 
   }
+
+ 
 
 });
