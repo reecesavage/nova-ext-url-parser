@@ -34,7 +34,7 @@ function __construct() {
        $text=substr($content, strpos($content, "[") + 1); 
       if(!empty($text))
      {
-        $finalText=explode(']', $text,2);
+        $finalText=explode(']', $text,2); 
         if(isset($finalText[0]))
         {     
              $contentArray[]=$finalText[0]; 
