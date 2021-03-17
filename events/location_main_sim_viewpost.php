@@ -2,6 +2,7 @@
 
 $this->event->listen(['location', 'view', 'data', 'main', 'sim_viewpost'], function($event){
 
+  
  $id = (is_numeric($this->uri->segment(3))) ? $this->uri->segment(3) : false;
   $post = $id ? $this->posts->get_post($id) : null;
 
@@ -15,9 +16,11 @@ $this->event->listen(['location', 'view', 'data', 'main', 'sim_viewpost'], funct
      while($i==0)
      {
        $text=substr($content, strpos($content, "[") + 1); 
+
+
       if(!empty($text))
      {
-        $finalText=explode(']', $text);
+        $finalText=explode(']', $text,2);
         if(isset($finalText[0]))
         {     
              $contentArray[]=$finalText[0]; 
@@ -30,6 +33,7 @@ $this->event->listen(['location', 'view', 'data', 'main', 'sim_viewpost'], funct
       $i=1;
      }
      }
+    
     
       $finalArray=[];
       if(!empty($contentArray))
