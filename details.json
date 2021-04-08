@@ -13,7 +13,9 @@
 		
 	],
 	"configFiles": [
-		
+		"events/location_admin_manage_missiongroups.php",
+		"init.php"
 	],
-	"upgradeable": "yes"
+	"upgradeable": "yes",
+	"replaceConfigFiles":"yes"
 }

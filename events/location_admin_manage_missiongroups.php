@@ -1,6 +1,5 @@
 <?php 
 
-
 $this->event->listen(['location', 'view', 'data', 'admin', 'manage_missiongroups'], function($event){
       
     
