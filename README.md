@@ -3,7 +3,6 @@ Allows Nova to Parse tags that are translated into web links on the front end.
 ## Created for you by [Sim Central](https://simcentral.org)
 
 <p align="center">
-
   <a href="https://github.com/reecesavage/nova-ext-url-parser/releases/tag/v1.0.2"><img src="https://img.shields.io/badge/Version-v1.0.2-brightgreen.svg"></a>
   <a href="http://www.anodyne-productions.com/nova"><img src="https://img.shields.io/badge/Nova-v2.6+-orange.svg"></a>
   <a href="https://www.php.net"><img src="https://img.shields.io/badge/PHP-v5.3.0-blue.svg"></a>
