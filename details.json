@@ -1,0 +1,24 @@
+{
+	"name": "URL Parser",
+	"version": "1.0.0",
+	"description": "Allows Nova to Parse tags that are translated into web links on the front end.",
+	"url": "https://github.com/reecesavage/nova-ext-url-parser",
+	"author": {
+		"name": "Sim Central",
+		"email": "info@simcentral.org",
+		"url": "https://simcentral.org"
+	},
+	"folder": "nova_ext_url_parser",
+	"requiredExtensions": [
+		
+	],
+	"configFiles": [
+		"events/location_admin_manage_missiongroups.php",
+		"init.php"
+	],
+	"upgradeable": "yes",
+	"replaceConfigFiles":"yes",
+	"incompatibleExtensions":[ 
+            
+	]
+}

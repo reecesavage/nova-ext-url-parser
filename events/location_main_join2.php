@@ -13,4 +13,3 @@ $this->event->listen(['location', 'view', 'data', 'main', 'main_join_2'], functi
 
 
 });
-

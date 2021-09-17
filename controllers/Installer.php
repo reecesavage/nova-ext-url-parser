@@ -124,8 +124,10 @@ function __construct() {
 
      $table= $this->ci->db->table_exists('tag');
      if(empty($table))
-     {
-       $this->ci->db->query("CREATE TABLE `nova_tag` (
+     { 
+      $table= $this->ci->db->dbprefix.'tag';
+
+       $this->ci->db->query("CREATE TABLE `$table` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
   `title` varchar(255) DEFAULT NULL,
   `url` text DEFAULT NULL,
